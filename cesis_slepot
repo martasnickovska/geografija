@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ziemas sports un dabas takas: Cēsu piedzīvojums</title>
+    <style>
+        :root {
+            --primary-color: #2c3e50; /* Tumši zils/pelēks */
+            --accent-color: #e74c3c; /* Sarkans akcentiem (Valentīndiena) */
+            --bg-color: #f4f7f6;
+            --card-bg: #ffffff;
+            --text-color: #333;
+            --light-text: #666;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: var(--card-bg);
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            color: var(--primary-color);
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            text-align: center;
+            color: var(--light-text);
+            font-size: 1.1em;
+            margin-bottom: 30px;
+            border-bottom: 2px solid var(--primary-color);
+            padding-bottom: 20px;
+        }
+
+        h2 {
+            color: var(--primary-color);
+            border-left: 5px solid var(--accent-color);
+            padding-left: 15px;
+            margin-top: 30px;
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .info-box {
+            background: #ecf0f1;
+            padding: 15px;
+            border-radius: 5px;
+        }
+
+        .info-box strong {
+            display: block;
+            color: var(--primary-color);
+            margin-bottom: 5px;
+        }
+
+        /* Laika plānojuma stils */
+        .timeline {
+            list-style: none;
+            padding: 0;
+        }
+
+        .timeline-item {
+            padding: 15px 0;
+            border-bottom: 1px solid #eee;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .timeline-item:last-child {
+            border-bottom: none;
+        }
+
+        .time {
+            font-weight: bold;
+            color: var(--accent-color);
+            min-width: 130px;
+            flex-shrink: 0;
+        }
+
+        .activity {
+            flex-grow: 1;
+        }
+
+        .cost {
+            font-weight: bold;
+            color: var(--primary-color);
+            background: #eef2f3;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 0.9em;
+            margin-left: auto;
+        }
+
+        .note {
+            display: block;
+            font-size: 0.85em;
+            color: var(--light-text);
+            font-style: italic;
+            margin-top: 4px;
+        }
+
+        .important {
+            color: var(--accent-color);
+            font-weight: bold;
+        }
+
+        /* Avotu sadaļa */
+        .sources {
+            margin-top: 50px;
+            padding-top: 20px;
+            border-top: 1px solid #ccc;
+            font-size: 0.9em;
+        }
+
+        .sources ul {
+            list-style-type: square;
+            padding-left: 20px;
+        }
+
+        .sources a {
+            color: var(--primary-color);
+            text-decoration: none;
+            border-bottom: 1px dotted var(--primary-color);
+        }
+
+        .sources a:hover {
+            color: var(--accent-color);
+        }
+
+        /* Mobile adjustments */
+        @media (max-width: 600px) {
+            .container { padding: 20px; }
+            .time { min-width: 100%; margin-bottom: 5px; }
+            .cost { margin-left: 0; margin-top: 5px; display: inline-block;}
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Ziemas sports un dabas takas: Cēsu piedzīvojums</h1>
+    <div class="subtitle">
+        2 dienu maršruts 10 personu grupai • 2027. gada 14.-15. februāris
+    </div>
+
+    <div class="info-grid">
+        <div class="info-box">
+            <strong>Transports</strong>
+            Vilciens (Rīga-Cēsis) + Vietējais transports (Taxi/Autobuss)
+        </div>
+        <div class="info-box">
+            <strong>Naktsmītne</strong>
+            Kempings "Žagarkalns" (Apsildāmas mājiņas)
+        </div>
+        <div class="info-box">
+            <strong>Budžets</strong>
+            ~99.00 EUR personai (iesk. ēdināšanu, transportu, biļetes)
+        </div>
+    </div>
+
+    <h2>1. diena: Sestdiena, 14. februāris</h2>
+    <ul class="timeline">
+        <li class="timeline-item">
+            <span class="time">08:00 – 08:15</span>
+            <div class="activity">Tikšanās Rīgas Centrālajā stacijā pie kasēm.</div>
+        </li>
+        <li class="timeline-item">
+            <span class="time">08:30 – 10:20</span>
+            <div class="activity">Vilciens Rīga – Cēsis. <span class="note">Ieteicams pirkt grupas e-biļeti Vivi lietotnē.</span></div>
+            <span class="cost">2.65 €</span>
+        </li>
+        <li class="timeline-item">
+            <span class="time">10:45</span>
+            <div class="activity">Transports uz Žagarkalnu (Taxi/Autobuss).</div>
+            <span class="cost">~2.50 €</span>
+        </li>
+        <li class="timeline-item">
+            <span class="time">11:00 – 15:00</span>
+            <div class="activity">Slēpošana/Snovbords "Žagarkalnā" (4h). <span class="note">Cenā pacēlājs + inventārs.</span></div>
+            <span class="cost">30.00 €</span>
+        </li>
+        <li class="timeline-item">
+            <span class="time">15:30</span>
+            <div class="activity">Pusdienas kalna kafejnīcā (Zupa + tēja).</div>
+            <span class="cost">~10.00 €</span>
+        </li>
+        <li class="timeline-item">
+            <span class="time">17:00</span>
+            <div class="activity">Cīrulīšu dabas takas. <span class="note">Spoguļklintis un Gaujas senleja ziemas krēslā.</span></div>
+            <span class="cost">0.00 €</span>
+        </li>
+        <li class="timeline-item">
+            <span class="time">19:30</span>
+            <div class="activity">Vakariņas kafejnīcā "Pagrabiņš". <br><span class="important">! Obligāta rezervācija 2 nedēļas iepriekš.</span></div>
+            <span class="cost">~15.00 €</span>
+        </li>
+        <li class="timeline-item">
+            <span class="time">21:30</span>
+            <div class="activity">Nakšņošana kempingā "Žagarkalns" (Siltās mājiņas).</div>
+            <span class="cost">20.00 €</span>
+        </li>
+    </ul>
+
+    <h2>2. diena: Svētdiena, 15. februāris</h2>
+    <ul class="timeline">
+        <li class="timeline-item">
+            <span class="time">10:00</span>
+            <div class="activity">Brokastis (pašgatavotas kempinga virtuvē).</div>
+        </li>
+        <li class="timeline-item">
+            <span class="time">11:30</span>
+            <div class="activity">Cēsu Viduslaiku pils drupas. <span class="note">Ekskursija ar lukturīšiem.</span></div>
+            <span class="cost">8.00 €</span>
+        </li>
+        <li class="timeline-item">
+            <span class="time">13:00</span>
+            <div class="activity">Sv. Jāņa baznīcas tornis un Izstāžu nams.</div>
+            <span class="cost">6.00 €</span>
+        </li>
+        <li class="timeline-item">
+            <span class="time">14:30</span>
+            <div class="activity">Pusdienas picērijā "Studio Pizza". <br><span class="important">! Ieteicama rezervācija.</span></div>
+            <span class="cost">~10.00 €</span>
+        </li>
+        <li class="timeline-item">
+            <span class="time">16:44 – 18:35</span>
+            <div class="activity">Vilciens Cēsis – Rīga.</div>
+            <span class="cost">2.65 €</span>
+        </li>
+    </ul>
+
+    <div class="sources">
+        <h3>Informācijas avoti un noderīgas saites:</h3>
+        <p>Visa informācija apkopota, balstoties uz aktuālo tūrisma piedāvājumu (2025/2026. g. dati). Pirms brauciena lūgums pārbaudīt aktuālos darba laikus.</p>
+        <ul>
+            <li><strong>Vilcienu saraksts un biļetes:</strong> <a href="https://www.vivi.lv/" target="_blank">AS "Pasažieru vilciens" (Vivi)</a></li>
+            <li><strong>Slēpošanas bāze un kempings:</strong> <a href="https://zagarkalns.lv/" target="_blank">Žagarkalns</a></li>
+            <li><strong>Cēsu tūrisma informācija un takas:</strong> <a href="https://turisms.cesis.lv/" target="_blank">Cēsu Tūrisma informācijas centrs</a></li>
+            <li><strong>Cēsu pils un Izstāžu nams:</strong> <a href="https://cesupils.lv/" target="_blank">Cēsu pils komplekss</a></li>
+            <li><strong>Sv. Jāņa baznīca:</strong> <a href="https://cesusvjana.lv/" target="_blank">Cēsu Svētā Jāņa baznīca</a></li>
+        </ul>
+    </div>
+</div>
+
+</body>
+</html>
